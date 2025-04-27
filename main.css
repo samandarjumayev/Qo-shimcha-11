@@ -264,7 +264,7 @@
   color: #fff;
   width: 400px;
   height: auto;
-  padding: 20px 30px;
+  padding: 60px;
   border-radius: 7px;
 }
 .hisoblash .hisoblash-info h3 {
@@ -285,6 +285,57 @@
 }
 .hisoblash .hisoblash-info h4 span {
   color: #fff;
+}
+.hisoblash .hisoblash-info label {
+  padding: 5px 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.hisoblash .hisoblash-info input {
+  outline: none;
+  border: none;
+  padding: 7px 5px;
+  margin: 5px 0;
+  margin-bottom: 25px;
+  width: 100%;
+  border-radius: 3px;
+  background-color: rgba(119, 0, 255, 0.2705882353);
+  color: #fff;
+}
+.hisoblash .hisoblash-info input::-moz-placeholder {
+  color: #fff;
+}
+.hisoblash .hisoblash-info input::placeholder {
+  color: #fff;
+}
+.hisoblash .hisoblash-info button {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background-color: rgba(119, 0, 255, 0.2705882353);
+  color: #fff;
+  font-family: cursive;
+  font-size: 17px;
+  transition: 0.5s;
+}
+.hisoblash .hisoblash-info button:hover {
+  background-color: rgba(119, 0, 255, 0.6980392157);
+  cursor: pointer;
+}
+.hisoblash .hisoblash-info button:active {
+  transition: 0.1s;
+  transform: scale(0.9);
+}
+.hisoblash .hisoblash-info p {
+  margin-top: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  width: 80%;
+  float: right;
+}
+.hisoblash .hisoblash-info p span {
+  color: var(--rang-3);
 }
 
 * {
