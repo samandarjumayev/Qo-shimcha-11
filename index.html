@@ -6,6 +6,7 @@
     <title>Qo'shimcha vazifa 11</title>
     <link rel="stylesheet" href="./main.css">
     <link rel="icon" href="./images/extra.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dfead5f7ee.js" crossorigin="anonymous"></script>
     <script src="./script/app.js" defer></script>
 </head>
@@ -168,7 +169,7 @@
     </section>
 
     <section class="hisoblash">
-        <div class="hisoblash-info container">
+        <div class="hisoblash-info container" data-aos="zoom-in-up" data-aos-duration="700">
             <form action="">
                 <h3>JavaScript - <span>While</span></h3>
                 <h4>Raqamlari yig'indisi: <span id="yigindi">#</span></h4>
@@ -186,5 +187,11 @@
         </div>
     </section>
 
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
