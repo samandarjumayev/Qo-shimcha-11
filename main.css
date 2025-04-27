@@ -1,0 +1,347 @@
+.header {
+  background-color: var(--main-back-color);
+  height: 80px;
+}
+
+.nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+.nav .center-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 12px;
+}
+.nav .center-nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+}
+.nav .center-nav li a:hover {
+  color: var(--rang-1);
+}
+.nav .center-nav li select {
+  color: #fff;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.nav .center-nav li select:hover {
+  color: var(--rang-1);
+}
+.nav .center-nav li select option {
+  color: black;
+  padding: 12px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+.nav .right-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  list-style-type: none;
+}
+.nav .right-nav li i {
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 12px;
+  padding: 5px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.nav .right-nav li i:hover {
+  box-shadow: 0px 0px 3px 5px rgba(128, 128, 128, 0.153);
+  background-color: rgba(128, 128, 128, 0.153);
+  color: var(--rang-3);
+}
+.nav .right-nav li i:active {
+  transition: 0.1s;
+  transform: scale(0.9);
+}
+.nav .right-nav li select {
+  background: none;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.nav .right-nav li select:hover {
+  color: var(--rang-2);
+}
+.nav .right-nav li select option {
+  color: #000;
+}
+.nav .menu {
+  display: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.nav .menu:checked + .hide-menu {
+  transform: translateX(0px);
+}
+.nav .hide-menu {
+  width: 330px;
+  height: calc(100vh - 80px);
+  transform: translateX(330px);
+  transition: 0.5s;
+  color: #fff;
+  background-color: rgba(19, 0, 35, 0.7764705882);
+  background-color: var(--menu-back-color);
+  position: fixed;
+  top: 80px;
+  right: 0;
+  z-index: 4;
+  padding: 12px 22px;
+  padding-right: 5%;
+  border-left: 2px solid rgb(51, 49, 60);
+  border-radius: 10px;
+}
+.nav .hide-menu .profile {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.nav .hide-menu .profile img {
+  width: 35px;
+  border-radius: 50%;
+}
+.nav .hide-menu .profile ul {
+  list-style-type: none;
+  height: 100%;
+  width: 100%;
+  line-height: 17px;
+}
+.nav .hide-menu .set-status {
+  margin-top: 20px;
+  padding: 7px;
+  margin-bottom: 3px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-radius: 7px;
+}
+.nav .hide-menu .set-status:hover {
+  background-color: rgba(72, 69, 132, 0.271);
+  cursor: pointer;
+}
+.nav .hide-menu .set-status i {
+  color: #DAE1E7;
+  margin: 0 6px;
+}
+.nav .hide-menu .status-info {
+  list-style: none;
+  margin: 12px 0;
+}
+.nav .hide-menu .status-info li {
+  margin-bottom: 12px;
+  border-radius: 7px;
+  padding: 9px 7px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.nav .hide-menu .status-info li:hover {
+  background-color: rgba(72, 69, 132, 0.271);
+  cursor: pointer;
+}
+.nav .hide-menu .status-info li a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav .hide-menu .status-info li a i {
+  color: #DAE1E7;
+}
+.nav .hide-menu .status-info i {
+  margin: 0 6px;
+}
+
+.main {
+  background-color: var(--main-back-color);
+  height: 900px;
+}
+
+.main-info {
+  height: 100%;
+  position: relative;
+}
+.main-info .visual-img {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.main-top {
+  position: absolute;
+  top: 0;
+  height: 50%;
+  color: #fff;
+  z-index: 1;
+  width: 90%;
+  margin-left: 5%;
+}
+.main-top .top-info {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.main-top .top-info h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 65px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  letter-spacing: 2.5px;
+  color: rgba(127, 255, 212, 0.599);
+}
+
+.main-bottom {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  z-index: 3;
+  width: 100%;
+  height: 35%;
+  background-color: rgba(0, 0, 0, 0.876);
+  box-shadow: 0px -20px 37px 16px rgba(0, 0, 0, 0.896);
+  display: flex;
+  justify-content: center;
+}
+.main-bottom .bottom-info {
+  margin-top: -50px;
+}
+.main-bottom .bottom-info h5 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.main-bottom .bottom-info p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  color: #c8c8c8;
+  font-size: 19px;
+  width: 100%;
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+.main-bottom .bottom-info p span {
+  color: #fff;
+  font-weight: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+:root {
+  --main-back-color: #070707;
+  --rang-1: #63E400;
+  --rang-2: #07C8F1;
+  --rang-3: #7461f0;
+  --rang-4: #CD49EF;
+  --menu-back-color: #0b0f13;
+}
+
+.tugma-1 {
+  position: relative;
+  margin: 0;
+  padding: 10px 35px;
+  outline: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: linear-gradient(25deg, var(--rang-4), var(--rang-3));
+  border-radius: 10px;
+  border: none;
+  font-weight: 400;
+  font-family: inherit;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.tugma-1:active {
+  transform: scale(0.9);
+}
+
+.tugma-1 span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  font-family: monospace;
+}
+
+.tugma-1:hover {
+  animation: rotate624 0.7s ease-in-out both;
+}
+
+.tugma-1:hover span {
+  animation: storm1261 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+@keyframes rotate624 {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+@keyframes storm1261 {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}/*# sourceMappingURL=main.css.map */
